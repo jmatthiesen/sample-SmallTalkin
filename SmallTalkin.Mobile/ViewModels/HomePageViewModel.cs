@@ -23,10 +23,19 @@ namespace SmallTalkin.Mobile
             Recommendation = recommendationSevice.GetRecommendation();
         }
 
+        private string recommendation;
         public string Recommendation
         {
-            get;
-            private set;
+            get { return this.recommendation; }
+            private set
+            {
+				if (recommendation != value)
+				{
+					recommendation = value;
+
+					OnPropertyChanged(nameof(Recommendation));
+                }
+            }
         }
 
         private List<string> subjects = new List<string>

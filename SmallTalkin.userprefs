@@ -1,16 +1,17 @@
 ﻿<Properties StartupConfiguration="{3F71760D-0883-4EBC-B42B-BCD9516EF1BB}|Default">
   <MonoDevelop.Ide.ItemProperties.SmallTalkin.Tests PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="sample-SmallTalkin Status">
+  <MonoDevelop.Ide.Workbench ActiveDocument="SmallTalkin.Mobile/ViewModels/HomePageViewModel.cs">
     <Files>
-      <File FileName="SmallTalkin.Mobile/Views/HomePage.xaml" Line="12" Column="21" />
-      <File FileName="sample-SmallTalkin Status" />
+      <File FileName="SmallTalkin.Mobile/Views/HomePage.xaml" Line="14" Column="37" />
+      <File FileName="SmallTalkin.Mobile/ViewModels/HomePageViewModel.cs" Line="23" Column="44" />
     </Files>
   </MonoDevelop.Ide.Workbench>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|iPhone" />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|iPhoneSimulator" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.ItemProperties.SmallTalkin.RecommendationService PreferredExecutionTarget="MonoDevelop.Default" />
   <MultiItemStartupConfigurations>
     <MultiItemSolutionRunConfiguration Id="Run - iOS" Name="Run - iOS">
       <Items>
@@ -19,7 +20,7 @@
       </Items>
     </MultiItemSolutionRunConfiguration>
   </MultiItemStartupConfigurations>
-  <MonoDevelop.Ide.ItemProperties.SmallTalkin.Mobile.iOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneDeviceTarget.1d5add1effb307e7f098da282e9c8b6c417ea4e4">
+  <MonoDevelop.Ide.ItemProperties.SmallTalkin.Mobile.iOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.EAD54B40-66A7-42D0-97B7-6875C77A1D66">
     <MonoDevelop.MacDev.AppleDevelopmentTeam />
   </MonoDevelop.Ide.ItemProperties.SmallTalkin.Mobile.iOS>
 </Properties>

@@ -7,7 +7,7 @@
 	<key>CFBundleName</key>
 	<string>SmallTalkin</string>
 	<key>CFBundleIdentifier</key>
-	<string>com.urgetocode.smalltalkin</string>
+	<string>com.urgetocode.sample-smalltalkin</string>
 	<key>CFBundleShortVersionString</key>
 	<string>1.0</string>
 	<key>CFBundleVersion</key>

@@ -2,28 +2,36 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="SmallTalkin.Mobile.HomePage" Title="{Binding Title}" x:Name="BrowseItemsPage">
     <ContentPage.Resources>
         <ResourceDictionary>
-            <Style x:Key="RecommendationStyle" TargetType="Label">
-                <Setter Property="Margin" Value="10"/>
-                <Setter Property="FontSize" Value="30" />
-                <Setter Property="FontAttributes" Value="Italic"/>
-                <Setter Property="VerticalOptions" Value="Center" />
-                <Setter Property="HorizontalOptions" Value="Center"/>
-                <Setter Property="TextColor" Value="Gray" />
-            </Style>
             <Style x:Key="SubjectStyle" TargetType="Label">
                 <Setter Property="FontSize" Value="24" />
                 <Setter Property="HorizontalOptions" Value="Center" />
+                <Setter Property="HeightRequest" Value="30"/>
                 <Setter Property="TextColor" Value="#3B75AD" />
+            </Style>
+            <Style x:Key="RecommendationStyle" TargetType="Label">
+                <Setter Property="Margin" Value="10"/>
+                <Setter Property="FontSize" Value="24" />
+                <Setter Property="FontAttributes" Value="Italic"/>
+                <Setter Property="HorizontalTextAlignment" Value="Center"/>
+                <Setter Property="TextColor" Value="Gray" />
+                <Setter Property="VerticalOptions" Value="Center"/>
             </Style>
         </ResourceDictionary>
     </ContentPage.Resources>
     <ContentPage.Content>
-        <StackLayout>
-            <Label Style="{StaticResource SubjectStyle}">What do you want to talk about?</Label>
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+            <Label Style="{StaticResource SubjectStyle}" Grid.Row="0">What do you want to talk about?</Label>
             <Picker x:Name="TypeOfSmallTalk" 
                 ItemsSource="{Binding Subjects}"
-                SelectedIndex="{Binding SubjectsSelectedIndex}" />
-            <Label Style="{StaticResource RecommendationStyle}" Text="{Binding Recommendation}"/>
-        </StackLayout>
+                SelectedIndex="{Binding SubjectsSelectedIndex}" Grid.Row="1" />
+            <Label Style="{StaticResource RecommendationStyle}"
+                Text="{Binding Recommendation}"
+                Grid.Row="2"/>
+        </Grid>
     </ContentPage.Content>
 </ContentPage>
