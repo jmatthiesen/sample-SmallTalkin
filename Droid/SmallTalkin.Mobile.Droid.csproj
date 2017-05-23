@@ -134,6 +134,12 @@
     <AndroidResource Include="Resources\layout\Toolbar.axml" />
     <AndroidResource Include="Resources\values\styles.xml" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\SmallTalkin.Core\SmallTalkin.Core.csproj">
+      <Project>{1503EF07-0CA6-4FF1-8C3C-BC3E477C06A6}</Project>
+      <Name>SmallTalkin.Core</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="..\SmallTalkin.Mobile\SmallTalkin.Mobile.projitems" Label="Shared" Condition="Exists('..\SmallTalkin.Mobile\SmallTalkin.Mobile.projitems')" />
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
   <Import Project="..\packages\Microsoft.Bcl.Build.1.0.21\build\Microsoft.Bcl.Build.targets" Condition="Exists('..\packages\Microsoft.Bcl.Build.1.0.21\build\Microsoft.Bcl.Build.targets')" />

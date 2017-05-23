@@ -14,5 +14,6 @@ namespace SmallTalkin.Tests
 
             Assert.False(String.IsNullOrEmpty(recommendation));
         }
+
     }
 }

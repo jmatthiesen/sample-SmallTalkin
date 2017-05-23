@@ -1,11 +1,12 @@
 ﻿<Properties StartupConfiguration="{3F71760D-0883-4EBC-B42B-BCD9516EF1BB}|Default">
   <MonoDevelop.Ide.ItemProperties.SmallTalkin.Tests PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="SmallTalkin.Core/RecommendationService.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="sample-SmallTalkin Status">
     <Files>
-      <File FileName="SmallTalkin.Core/RecommendationService.cs" Line="5" Column="23" />
+      <File FileName="SmallTalkin.Mobile/Views/HomePage.xaml" Line="12" Column="21" />
+      <File FileName="sample-SmallTalkin Status" />
     </Files>
   </MonoDevelop.Ide.Workbench>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|iPhone" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
@@ -18,7 +19,7 @@
       </Items>
     </MultiItemSolutionRunConfiguration>
   </MultiItemStartupConfigurations>
-  <MonoDevelop.Ide.ItemProperties.SmallTalkin.Mobile.iOS PreferredExecutionTarget="D96B5F09-CF77-44DB-93B0-20879591DE1E">
+  <MonoDevelop.Ide.ItemProperties.SmallTalkin.Mobile.iOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneDeviceTarget.1d5add1effb307e7f098da282e9c8b6c417ea4e4">
     <MonoDevelop.MacDev.AppleDevelopmentTeam />
   </MonoDevelop.Ide.ItemProperties.SmallTalkin.Mobile.iOS>
 </Properties>

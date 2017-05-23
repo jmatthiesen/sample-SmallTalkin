@@ -79,6 +79,7 @@
     <MtouchArch>ARMv7, ARM64</MtouchArch>
     <MtouchHttpClientHandler>HttpClientHandler</MtouchHttpClientHandler>
     <PlatformTarget>x86</PlatformTarget>
+    <CodesignProvision>iOS Team Provisioning Profile: com.urgetocode.smalltalkin</CodesignProvision>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -154,6 +155,12 @@
   </ItemGroup>
   <ItemGroup>
     <InterfaceDefinition Include="LaunchScreen.storyboard" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\SmallTalkin.Core\SmallTalkin.Core.csproj">
+      <Project>{1503EF07-0CA6-4FF1-8C3C-BC3E477C06A6}</Project>
+      <Name>SmallTalkin.Core</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="..\SmallTalkin.Mobile\SmallTalkin.Mobile.projitems" Label="Shared" Condition="Exists('..\SmallTalkin.Mobile\SmallTalkin.Mobile.projitems')" />
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />

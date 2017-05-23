@@ -20,23 +20,7 @@ namespace SmallTalkin.Mobile
             else
                 DependencyService.Register<CloudDataStore>();
 
-            SetMainPage();
-        }
-
-        public static void SetMainPage()
-        {
-            if (!UseMockDataStore && !Settings.IsLoggedIn)
-            {
-                Current.MainPage = new NavigationPage(new LoginPage())
-                {
-                    BarBackgroundColor = (Color)Current.Resources["Primary"],
-                    BarTextColor = Color.White
-                };
-            }
-            else
-            {
-                GoToMainPage();
-            }
+            GoToMainPage();
         }
 
         public static void GoToMainPage()
@@ -44,7 +28,7 @@ namespace SmallTalkin.Mobile
             Current.MainPage = new TabbedPage
             {
                 Children = {
-                    new NavigationPage(new ItemsPage())
+                    new NavigationPage(new HomePage())
                     {
                         Title = "Browse",
                         Icon = Device.OnPlatform("tab_feed.png", null, null)
